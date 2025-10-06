@@ -1,52 +1,49 @@
-# Dashboard E-commerce – Projet INF416 H2025
+# E-commerce Dashboard – INF416 H2025 Project
 
-[**Voir le dashboard en ligne**](https://ecommerce-dashboard.shinyapps.io/projet_4inf416_h2025-main/)
+[**View the live dashboard**](https://ecommerce-dashboard.shinyapps.io/projet_4inf416_h2025-main/)
 
-## 🎯 Objectif du projet
+## 🎯 Project Objective
 
-Ce projet vise à développer un tableau de bord interactif pour l'analyse des ventes d'une plateforme e-commerce. L'objectif est de :
+This project aims to develop an interactive dashboard for analyzing sales data from an e-commerce platform. The objectives are to:
 
-* Visualiser les tendances des ventes au fil du temps.
-* Identifier les produits les plus vendus.
-* Analyser les performances des ventes par région et par segment de clientèle.
-* Fournir des outils interactifs pour une exploration dynamique des données.
+* Visualize sales trends over time.
+* Identify top-selling products.
+* Analyze sales performance by region and customer segment.
+* Provide interactive tools for dynamic data exploration.
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies Used
 
-* **R** : Langage de programmation principal.
-* **Shiny** : Framework pour la création d'applications web interactives.
-* **shinydashboard** : Interface utilisateur de type tableau de bord.
-* **Plotly** : Bibliothèque pour la création de graphiques interactifs.
-* **dplyr** : Package pour la manipulation des données.
+* **R**: Main programming language.
+* **Shiny**: Framework for creating interactive web applications.
+* **shinydashboard**: Dashboard-style user interface.
+* **Plotly**: Library for interactive visualizations.
+* **dplyr**: Package for data manipulation.
 
-## 📂 Structure du projet
+## 📂 Project Structure
 
 ```
-/projet_4inf416_h2025-main/
+/ (project root)
 │
-├── app.R          # Script principal de l'application Shiny
-├── data/          # Dossier contenant les jeux de données
-│   └── sales_data.csv
-├── www/           # Dossier pour les ressources statiques (CSS, images)
-│   └── style.css
-└── README.md      # Documentation du projet
+├── Project.Rproj          # R project file
+├── ui.R                   # Shiny user interface
+├── server.R               # Shiny server logic
+├── README.md              # Project documentation
+├── ecommerce_logs.csv     # Main dataset
+└── .gitignore             # Git ignore file
 ```
 
-## 🚀 Instructions d'utilisation
+## 🚀 Usage Instructions
 
-1. Clonez ce repository sur votre machine locale.
-2. Installez les dépendances R nécessaires :
+1. Clone this repository to your local machine.
+2. Install the required R packages:
 
    ```R
    install.packages(c("shiny", "shinydashboard", "plotly", "dplyr"))
    ```
-3. Lancez l'application Shiny :
+3. Run the Shiny application:
 
    ```R
-   shiny::runApp("app.R")
+   shiny::runApp(".")
    ```
-4. Ouvrez votre navigateur et accédez à `http://localhost:3838` pour visualiser le tableau de bord.
+4. Open your browser and go to `http://localhost:3838` to view the dashboard.
 
-## 📄 Licence
-
-Ce projet est sous licence MIT – voir le fichier [LICENSE](LICENSE) pour plus de détails.
